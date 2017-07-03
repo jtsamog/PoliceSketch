@@ -12,9 +12,29 @@
 - (instancetype)init{
     self = [super init];
     if (self) {
-        _eyes = @[[UIImage imageNamed:@"eyes_1.jpg"], [UIImage imageNamed:@"eyes_2.jpg"],[UIImage imageNamed:@"eyes_3.jpg"],[UIImage imageNamed:@"eyes_4.jpg"],[UIImage imageNamed:@"eyes_5.jpg"] ];
-        _noses = @[[UIImage imageNamed:@"nose_1.jpg"],[UIImage imageNamed:@"nose_2.jpg"],[UIImage imageNamed:@"nose_3.jpg"],[UIImage imageNamed:@"nose_4.jpg"],[UIImage imageNamed:@"nose_5.jpg"]];
-        _mouths = @[[UIImage imageNamed:@"mouth_1.jpg"],[UIImage imageNamed:@"mouth_2.jpg"],[UIImage imageNamed:@"mouth_3.jpg"],[UIImage imageNamed:@"mouth_4.jpg"],[UIImage imageNamed:@"mouth_5.jpg"]];
+        _eyes = @[
+                  [UIImage imageNamed:@"eyes_1.jpg"],
+                  [UIImage imageNamed:@"eyes_2.jpg"],
+                  [UIImage imageNamed:@"eyes_3.jpg"],
+                  [UIImage imageNamed:@"eyes_4.jpg"],
+                  [UIImage imageNamed:@"eyes_5.jpg"]
+                  ];
+        
+        _noses = @[
+                   [UIImage imageNamed:@"nose_1.jpg"],
+                   [UIImage imageNamed:@"nose_2.jpg"],
+                   [UIImage imageNamed:@"nose_3.jpg"],
+                   [UIImage imageNamed:@"nose_4.jpg"],
+                   [UIImage imageNamed:@"nose_5.jpg"]
+                   ];
+        
+        _mouths = @[
+                    [UIImage imageNamed:@"mouth_1.jpg"],
+                    [UIImage imageNamed:@"mouth_2.jpg"],
+                    [UIImage imageNamed:@"mouth_3.jpg"],
+                    [UIImage imageNamed:@"mouth_4.jpg"],
+                    [UIImage imageNamed:@"mouth_5.jpg"]
+                    ];
     }
     return self;
 }
