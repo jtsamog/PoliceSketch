@@ -39,64 +39,34 @@
     return self;
 }
 
-
 - (UIImage *)nextEye{
-    
-    if (self.eyeIndex == [self.eyes count] -1) {
-        self.eyeIndex = 0;
-    } else{
-        self.eyeIndex ++;
-    }
-        return self.eyes[self.eyeIndex];
+    self.eyeIndex ++;
+    return self.eyes[self.eyeIndex % self.eyes.count]; //using the modulus operator to cycle through the index
 }
 
 - (UIImage *)prevEye{
-    if (self.eyeIndex == 0) {
-        self.eyeIndex = [self.eyes count] -1;
-    } else{
-        self.eyeIndex --;
-    }
-    return self.eyes[self.eyeIndex];
-
+    self.eyeIndex --;
+    return self.eyes[self.eyeIndex % self.eyes.count];
 }
 
 - (UIImage *)nextNose{
-    
-    if (self.noseIndex == [self.noses count] -1) {
-        self.noseIndex = 0;
-    } else{
-        self.noseIndex ++;
-    }
-    return self.noses[self.noseIndex];
+    self.noseIndex ++;
+    return self.noses[self.noseIndex % self.noses.count];
 }
 
 - (UIImage *)prevNose{
-    if (self.noseIndex == 0) {
-        self.noseIndex = [self.noses count] -1;
-    } else{
         self.noseIndex --;
-    }
-    return self.noses[self.noseIndex];
-    
+    return self.noses[self.noseIndex % self.noses.count];
 }
 
 - (UIImage *)nextMouth{
-    
-    if (self.mouthIndex == [self.mouths count] -1) {
-        self.mouthIndex = 0;
-    } else{
         self.mouthIndex ++;
-    }
-    return self.mouths[self.mouthIndex];
+    return self.mouths[self.mouthIndex % self.mouths.count];
 }
 
 - (UIImage *)prevMouth{
-    if (self.mouthIndex == 0) {
-        self.mouthIndex = [self.mouths count] -1;
-    } else{
         self.mouthIndex --;
-    }
-    return self.mouths[self.mouthIndex];
+    return self.mouths[self.mouthIndex % self.mouths.count];
     
 }
 
